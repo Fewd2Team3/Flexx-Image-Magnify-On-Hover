@@ -1,0 +1,78 @@
+/**************************************************************************************************
+The Flex Image Magnifier relies on basic CSS Styling and CSS Transformations to achieve it's effect
+
+To use this feature you will need to do the following:
+
+1) Create a Div (or semantic tag....e.g., <section>) and assign class="flexx-imageSet".
+This will ensure appropriate CSS transformations are applied to your image.
+
+2) Create an unordered list that will hold your images. Each image will be a list item <li> and 
+you will need to assign a class of "flexx-imageMagnifier" to each each image tag <img>
+
+Here is a sample of the HTML that you could use:
+
+        <section class="flexx-imageSet">
+			<h3>Set of images</h3>
+            <p>Rollover an image to magnify it.</p>
+			<ul>
+            	<li><img src="images/01.jpg" class="image-magnifier" alt=""></li>
+            	<li><img src="images/02.jpg" class="image-magnifier" alt=""></li>
+            	<li><img src="images/03.jpg" class="image-magnifier" alt=""></li>
+            	<li><img src="images/04.jpg" class="image-magnifier" alt=""></li>
+            </ul>
+		</section>
+
+* Note: a section tag was used in this example but you could use a <div> if that is your preference  
+
+
+***************************************************************************************************/
+
+
+
+
+/* Set size (width) of thumbnail images you want to magnify */
+.imageSet img {
+    width: 120px;    
+}
+
+/* Remove list bullets on images */
+.imageSet ul {
+	list-style-type: none;
+}
+
+
+/******************************************************************
+There are a multitude of ways to style the thumbnail images
+For example: 
+1) All images on the same line;
+2) Images stacked vertically;
+3) Images in stacked in multiple columns
+
+The styling below is an example of style #3 (two cols X two rows).
+You can change that styling to #1 or #2 by simply commenting out 
+various parts of the CSS below:
+********************************************************************/
+
+.imageSet ul {
+    padding: 0; 
+}
+
+/* Stack pictures to create two rows by limiting width of imageSet div to two pictures wide (including padding).
+--> Comment out and you get a single row of images (Style#1)
+*/
+.imageSet {
+	width: 300px;
+}
+
+/* Float forces images to align in two columns
+--> Comment out and you get a vertical column of images
+(Style #2) 
+*/
+.imageSet ul li {
+	float:left;
+	margin:0 10px;
+}
+
+
+
+

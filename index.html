@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS for Flexx Image Magnifier</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    <link href="css/transitions.css" rel="stylesheet">
+    <link href="css/transforms.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="main">
+
+		<section id="description">
+			<h3>Flexx Image Magnifier</h3>
+			<p> The Flex Image Magnifier features relies on basic CSS Styling and CSS Transformations to achieve it's effect. </p>
+                <br>To use this feature you will need to do the following:
+                <ol>
+                    <li>Create a Div (or semantic tag....e.g., section tag) and assign class="flexx-imageSet".This will ensure appropriate CSS transformations are applied to your image.
+                    </li>
+                    
+                    <li>Create an unordered list that will hold your images. Each image will be a list item and you will need to assign a class of "flexx-imageMagnifier" to each each image tag. 
+                    </li> 
+                </ol>
+                <p>
+                   Here is a html sample that illustrates how you would implement the aforementioned:                        
+                </p>
+                <pre>                      
+                 &ltsection class="flexx-imageSet"&gt
+                    &lth3&gtSet of images&lt/h3&gt
+                    &ltp&gtRollover an image to magnify it.&lt/p&gt
+                    &ltul&gt
+                        &ltli&gt&ltimg src="images/01.jpg" class="image-magnifier" alt=""&gt&lt/li&lt
+                        &ltli&gt&ltimg src="images/02.jpg" class="image-magnifier" alt=""&gt&lt/li&gt
+                        &ltli&gt&ltimg src="images/03.jpg" class="image-magnifier" alt=""&gt&lt/li&gt
+                        &ltli&gt&ltimg src="images/04.jpg" class="image-magnifier" alt=""&gt&lt/li&gt
+                    &lt/ul&gt
+                &lt/section&gt
+                </pre>
+            * Note: a &ltsection&gt tag was used in this example but you could use a &ltdiv&gt if that is your preference.
+            <br><hr><br>     
+  
+        <section class="imageSet">
+			<h3>Set of images</h3>
+            <p>Rollover an image to magnify it.</p>
+			<ul>
+            	<li><img src="images/01.jpg" class="image-magnifier" alt=""></li>
+            	<li><img src="images/02.jpg" class="image-magnifier" alt=""></li>
+            	<li><img src="images/03.jpg" class="image-magnifier" alt=""></li>
+            	<li><img src="images/04.jpg" class="image-magnifier" alt=""></li>
+            </ul>
+		</section>
+	</div>
+</body>
+</html>
