@@ -68,11 +68,27 @@ various parts of the CSS below:
 --> Comment out and you get a vertical column of images
 (Style #2) 
 */
+
 .imageSet ul li {
 	float:left;
 	margin:0 10px;
 }
 
+/******************************************************************
+CSS Transforms required to enable magnification on hover
+********************************************************************/
 
+.image-magnifier	{
+        -webkit-transition: 1s;
+        transition: 1s;
+    }
+
+.image-magnifier:hover		{
+   -webkit-transform: scale(2,2);
+    transform: scale(2,2); 
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    
+}
 
 
